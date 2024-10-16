@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Series</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="my-4">Listado de Series</h1>
+    
+ 
+    <div class="row">
+      <div class="col-md-8">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Canal</th>
+              <th>Temporadas</th>
+              <th>Enlace</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody id="series-list">
+    
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7" id="average-seasons">Promedio de temporadas: </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      
+  
+      <div class="col-md-4">
+        <div id="series-detail" class="card" style="display: none;">
+          <img id="series-image" class="card-img-top" src="" alt="Imagen de la serie">
+          <div class="card-body">
+            <h5 id="series-name" class="card-title"></h5>
+            <p id="series-description" class="card-text"></p>
+            <a id="series-link" href="#" target="_blank" class="btn btn-primary">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
