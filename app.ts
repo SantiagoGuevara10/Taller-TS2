@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const seriesTable = document.getElementById("series-list");
   const averageSeasonsElement = document.getElementById("average-seasons");
 
-  // Elementos del card para mostrar detalles de la serie
+
   const seriesDetail = document.getElementById("series-detail");
   const seriesImage = document.getElementById("series-image");
   const seriesName = document.getElementById("series-name");
@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
         <td>${serie.description}</td>
       `;
 
-      // Agregar evento click a cada fila
+     
       row.addEventListener("click", () => {
-        // Mostrar los detalles de la serie seleccionada
-        seriesDetail!.style.display = "block"; // Mostrar el card
+    
+        seriesDetail!.style.display = "block"; 
         seriesImage!.setAttribute('src', serie.imageUrl);
         seriesName!.textContent = serie.name;
         seriesDescription!.textContent = serie.description;
